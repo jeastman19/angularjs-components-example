@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Probando componentes</title>
+</head>
+
+<body>
+    <div ng-app="appProbandoComponent">
+        <probando-component></probando-component>
+    </div>
+
+
+
+
+    <!-- Terceros -->
+    <script src="./node_modules/angular/angular.js"></script>
+    <!-- <script src="./node_modules/angular-route/angular-route.js"></script> -->
+
+    <script>
+        angular
+            .module("appProbandoComponent", [])
+            .component("probandoComponent", {
+                template: [
+                    '<div class="miclase">',
+                    '<span>Esto es algo de HTML en el componente</span> ',
+                    '<b>Angular Rules!</b>',
+                    '</div>'
+                ].join('')
+            });
+    </script>
+</body>
+
+</html>
