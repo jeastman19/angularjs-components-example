@@ -11,7 +11,12 @@
 
 <body>
     <div ng-app="appProbandoComponent">
-        <probando-component></probando-component>
+        <mi-header></mi-header>
+        <hr>
+        Probando ando...
+        <hr>
+        <user-list></user-list>
+        
     </div>
 
 
@@ -21,18 +26,15 @@
     <script src="./node_modules/angular/angular.js"></script>
     <!-- <script src="./node_modules/angular-route/angular-route.js"></script> -->
 
-    <script>
-        angular
-            .module("appProbandoComponent", [])
-            .component("probandoComponent", {
-                template: [
-                    '<div class="miclase">',
-                    '<span>Esto es algo de HTML en el componente</span> ',
-                    '<b>Angular Rules!</b>',
-                    '</div>'
-                ].join('')
-            });
-    </script>
+    <script src="./app.js"></script>
+    <script src="./components/mi-header/mi-header.js"></script>
+    <script src="./components/mi-header/mi-header.controller.js"></script>
+
+
+    <!-- User List -->
+    <script src="./components/user-list/user-list.js"></script>
+    <script src="./components/user-detail/user-detail.js"></script>
+
 </body>
 
 </html>
